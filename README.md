@@ -21,9 +21,9 @@
 
 ## Required volumes
 
-This plugin requires some volumes to collect metrics from containers running in the `host node`.
+This plugin requires some volumes to collect metrics from Docker `host node`.
 
-It maps the **host unix socket** `/var/run/docker.sock`, so it can send requests to the Docker Engine API to fetch data for containers retrieved previously from mounted `/var/lib/docker/containers`.
+It maps the **host unix socket** `/var/run/docker.sock`, so it can send requests to the Docker Engine API.
 
 > This plugin WILL NOT WORK without the volume properly mounted on `Fluentbit` container
 
