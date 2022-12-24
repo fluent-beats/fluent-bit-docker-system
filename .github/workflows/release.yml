@@ -17,11 +17,11 @@ jobs:
       - name: Build
         uses: fluent-beats/flb-plugin-sdk-action@v1
         with:
-            plugin-path: "./code/in_docker_system"
-            plugin-name: "docker_system"
+          plugin-path: "./code"
+          plugin-name: "in_docker_system"
 
       - name: Upload
         uses: shogo82148/actions-upload-release-asset@v1
         with:
           upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./code/in_docker_system/flb-in_docker_system.so
+          asset_path: ./code/build/flb-in_docker_system.so
