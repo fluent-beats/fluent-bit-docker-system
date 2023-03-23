@@ -16,8 +16,8 @@
  *  limitations under the License.
  */
 
-#ifndef FLB_IN_DE_H
-#define FLB_IN_DE_H
+#ifndef FLB_IN_DSYSTEM_H
+#define FLB_IN_DSYSTEM_H
 
 #include <msgpack.h>
 #include <fluent-bit/flb_input.h>
